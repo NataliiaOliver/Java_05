@@ -38,4 +38,15 @@ public class Utils {
 
         return createArrayRandomInt(length, upper, lower);
     }
+
+    /**
+     * Method of creating an array of random negative numbers:
+     */
+    public static int[] arrayRandomNegativeNumbers(int length, int upper, int lower){
+        if (length <= 0 || upper >= 0 || lower >= 0) {
+            return new int[]{};
+        }
+
+        return createArrayRandomInt(length, upper, lower);
+    }
 }
