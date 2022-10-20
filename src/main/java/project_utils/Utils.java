@@ -28,6 +28,18 @@ public class Utils {
     }
 
     /**
+     * Method_2 of creating an array with Random int numbers:
+     */
+    public static int[] generationRandomArrayMainInt(int length, int from, int to) {
+        int[] array = new int[length];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = from + (int) (Math.random() * (to + 1));
+        }
+
+        return array;
+    }
+
+    /**
      * Method of creating an array with Random double numbers:
      */
     public static double[] createArrayRandomDouble(int length, int upper, int lower) {
@@ -61,4 +73,6 @@ public class Utils {
 
         return createArrayRandomInt(length, upper, lower);
     }
+
+
 }
