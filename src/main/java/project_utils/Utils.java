@@ -314,5 +314,30 @@ public class Utils {
         return count;
     }
 
+    /**
+     * Methods for checking positive numbers in an array (int, double):
+     */
+    public static boolean checkPositiveNumbers(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 0) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static boolean checkPositiveNumbers(double[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 0.0) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 
 }
