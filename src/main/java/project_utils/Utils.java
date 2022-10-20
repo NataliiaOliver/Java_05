@@ -86,5 +86,19 @@ public class Utils {
         return createArrayRandomInt(length, upper, lower);
     }
 
+    /**
+     * Method of creating a two-dimensional array:
+     */
+    public static int[][] integerRandomNumbers2DArray(int row, int column, int upper, int lower) {
+        int[][] array = new int[row][column];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = getRandomInt(upper, lower);
+            }
+        }
+
+        return array;
+    }
+
 
 }
