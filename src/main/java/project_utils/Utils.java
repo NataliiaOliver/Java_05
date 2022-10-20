@@ -317,7 +317,7 @@ public class Utils {
     /**
      * Methods for checking positive numbers in an array (int, double):
      */
-    public static boolean checkPositiveNumbers(int[] array) {
+    public static boolean checkPositiveNumbersInArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] > 0) {
 
@@ -328,9 +328,34 @@ public class Utils {
         return false;
     }
 
-    public static boolean checkPositiveNumbers(double[] array) {
+    public static boolean checkPositiveNumbersInArray(double[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] > 0.0) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Methods for checking negative numbers in an array (int, double):
+     */
+    public static boolean checkNegativeNumbers(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 0) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static boolean checkNegativeNumbers(double[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 0.0) {
 
                 return true;
             }
