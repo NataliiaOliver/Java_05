@@ -144,5 +144,28 @@ public class Utils {
         System.out.println();
     }
 
+    /**
+     * Methods to calculate the average value of the elements of the array (int, double):
+     */
+    public static double averageArray(int[] array) {
+
+        double sumOfElements = 0;
+        for (int i = 0; i < array.length; i++) {
+            sumOfElements = sumOfElements + array[i];
+        }
+
+        return sumOfElements / array.length;
+    }
+
+    public static double averageArray(double[] array) {
+
+        double sumOfElements = 0;
+        for (int i = 0; i < array.length; i++) {
+            sumOfElements = sumOfElements + array[i];
+        }
+
+        return sumOfElements / array.length;
+    }
+
 
 }
