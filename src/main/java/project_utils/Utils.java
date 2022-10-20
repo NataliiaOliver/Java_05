@@ -275,5 +275,44 @@ public class Utils {
         }
     }
 
+    /**
+     * Methods for calculating the length of an array (int, double, boolean, String):
+     */
+    public static int lengthArray(int[] array) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            count++;
+        }
+
+        return count;
+    }
+
+    public static int lengthArray(double[] array) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            count++;
+        }
+
+        return count;
+    }
+
+    public static int lengthArray(boolean[] array) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            count++;
+        }
+
+        return count;
+    }
+
+    public static int lengthArray(String[] array) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            count++;
+        }
+
+        return count;
+    }
+
 
 }
