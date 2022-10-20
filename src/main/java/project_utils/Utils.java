@@ -239,5 +239,41 @@ public class Utils {
         return result;
     }
 
+    /**
+     * Methods to check whether the array is empty (int, double, String):
+     */
+    public static boolean checkForEmptyArray(int[] array) {
+
+        if (array.length != 0) {
+
+            return true;
+        } else {
+
+            return false;
+        }
+    }
+
+    public static boolean checkForEmptyArray(double[] array) {
+
+        if (array.length != 0) {
+
+            return true;
+        } else {
+
+            return false;
+        }
+    }
+
+    public static boolean checkForEmptyArray(String[] array) {
+
+        if (array.length != 0) {
+
+            return true;
+        } else {
+
+            return false;
+        }
+    }
+
 
 }
