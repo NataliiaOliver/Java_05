@@ -215,5 +215,29 @@ public class Utils {
         return max;
     }
 
+    /**
+     * Method for calculating the minimum value, the maximum value and average of the elements of an array:
+     */
+    public static int[] minMaxAverageArray(int[] nameArray) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        int average;
+        int sum = 0;
+        for (int i = 0; i < nameArray.length; i++) {
+            if (nameArray[i] < min) {
+                min = nameArray[i];
+            }
+            if (nameArray[i] > max) {
+                max = nameArray[i];
+            }
+            sum += nameArray[i];
+        }
+        average = sum / nameArray.length;
+
+        int[] result = {min, max, average};
+
+        return result;
+    }
+
 
 }
