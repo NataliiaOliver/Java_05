@@ -100,5 +100,18 @@ public class Utils {
         return array;
     }
 
+    /**
+     * Method_2 of creating a two-dimensional array:
+     */
+    public static int[][] array2D(int[][] arrayName) {
+        for (int i = 0; i < arrayName.length; i++) {
+            for (int j = 0; j < arrayName[i].length; j++) {
+                arrayName[i][j] = (int) (Math.random() * 10);
+            }
+        }
+
+        return arrayName;
+    }
+
 
 }
