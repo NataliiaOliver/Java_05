@@ -392,7 +392,7 @@ public class Utils {
     /**
      * Methods for checking the oddness of numbers in an array (int, double):
      */
-    public static boolean checkOddNumbers(int[] array) {
+    public static boolean checkOddNumbersInArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
 
@@ -403,7 +403,7 @@ public class Utils {
         return false;
     }
 
-    public static boolean checkOddNumbers(double[] array) {
+    public static boolean checkOddNumbersInArray(double[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0.0) {
 
@@ -412,6 +412,34 @@ public class Utils {
         }
 
         return false;
+    }
+
+    /**
+     * A method for calculating the quantity of even numbers in an array:
+     */
+    public static int countEvenNumbersInArray(int[] array) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    /**
+     * A method for calculating the quantity of odd numbers in an array:
+     */
+    public static int countOddNumbersInArray(int[] array) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                count++;
+            }
+        }
+
+        return count;
     }
 
 
