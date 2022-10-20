@@ -148,7 +148,6 @@ public class Utils {
      * Methods to calculate the average value of the elements of the array (int, double):
      */
     public static double averageArray(int[] array) {
-
         double sumOfElements = 0;
         for (int i = 0; i < array.length; i++) {
             sumOfElements = sumOfElements + array[i];
@@ -158,7 +157,6 @@ public class Utils {
     }
 
     public static double averageArray(double[] array) {
-
         double sumOfElements = 0;
         for (int i = 0; i < array.length; i++) {
             sumOfElements = sumOfElements + array[i];
@@ -171,7 +169,6 @@ public class Utils {
      * Methods for calculating the minimum value of the elements of an array (int, double):
      */
     public static int minValue(int[] array) {
-
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < array.length; i++) {
             if (min > array[i]) {
@@ -183,7 +180,6 @@ public class Utils {
     }
 
     public static double minValue(double[] array) {
-
         double min = Integer.MAX_VALUE;
         for (int i = 0; i < array.length; i++) {
             if (min > array[i]) {
@@ -192,6 +188,31 @@ public class Utils {
         }
 
         return min;
+    }
+
+    /**
+     * Methods for calculating the maximum value of the elements of an array (int, double):
+     */
+    public static int maxValue(int[] array) {
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            }
+        }
+
+        return max;
+    }
+
+    public static double maxValue(double[] array) {
+        double max = Integer.MIN_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            }
+        }
+
+        return max;
     }
 
 
