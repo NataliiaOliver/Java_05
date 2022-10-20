@@ -26,4 +26,16 @@ public class Utils {
 
         return array;
     }
+
+    /**
+     * Method of creating an array of random positive numbers:
+     */
+    public static int[] arrayRandomPositiveNumbers(int length, int upper, int lower){
+        if (length <= 0 || upper <= 0 || lower <= 0) {
+
+            return new int[]{};
+        }
+
+        return createArrayRandomInt(length, upper, lower);
+    }
 }
