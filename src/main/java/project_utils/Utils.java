@@ -28,6 +28,18 @@ public class Utils {
     }
 
     /**
+     * Method of creating an array with Random double numbers:
+     */
+    public static double[] createArrayRandomDouble(int length, int upper, int lower) {
+        double[] array = new double[length];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = getRandomDouble(upper, lower);
+        }
+
+        return array;
+    }
+
+    /**
      * Method of creating an array of random positive numbers:
      */
     public static int[] arrayRandomPositiveNumbers(int length, int upper, int lower){
