@@ -168,7 +168,7 @@ public class Utils {
     /**
      * Methods for calculating the minimum value of the elements of an array (int, double):
      */
-    public static int minValue(int[] array) {
+    public static int minValueInArray(int[] array) {
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < array.length; i++) {
             if (min > array[i]) {
@@ -179,7 +179,7 @@ public class Utils {
         return min;
     }
 
-    public static double minValue(double[] array) {
+    public static double minValueInArray(double[] array) {
         double min = Integer.MAX_VALUE;
         for (int i = 0; i < array.length; i++) {
             if (min > array[i]) {
@@ -193,7 +193,7 @@ public class Utils {
     /**
      * Methods for calculating the maximum value of the elements of an array (int, double):
      */
-    public static int maxValue(int[] array) {
+    public static int maxValueInArray(int[] array) {
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < array.length; i++) {
             if (max < array[i]) {
@@ -204,7 +204,7 @@ public class Utils {
         return max;
     }
 
-    public static double maxValue(double[] array) {
+    public static double maxValueInArray(double[] array) {
         double max = Integer.MIN_VALUE;
         for (int i = 0; i < array.length; i++) {
             if (max < array[i]) {
@@ -342,7 +342,7 @@ public class Utils {
     /**
      * Methods for checking negative numbers in an array (int, double):
      */
-    public static boolean checkNegativeNumbers(int[] array) {
+    public static boolean checkNegativeNumbersInArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] < 0) {
 
@@ -353,9 +353,34 @@ public class Utils {
         return false;
     }
 
-    public static boolean checkNegativeNumbers(double[] array) {
+    public static boolean checkNegativeNumbersInArray(double[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] < 0.0) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Methods for checking the parity of numbers in an array (int, double):
+     */
+    public static boolean checkEvenNumbersInArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static boolean checkEvenNumbersInArray(double[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0.0) {
 
                 return true;
             }
