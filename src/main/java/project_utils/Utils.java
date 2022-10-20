@@ -167,5 +167,32 @@ public class Utils {
         return sumOfElements / array.length;
     }
 
+    /**
+     * Methods for calculating the minimum value of the elements of an array (int, double):
+     */
+    public static int minValue(int[] array) {
+
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            if (min > array[i]) {
+                min = array[i];
+            }
+        }
+
+        return min;
+    }
+
+    public static double minValue(double[] array) {
+
+        double min = Integer.MAX_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            if (min > array[i]) {
+                min = array[i];
+            }
+        }
+
+        return min;
+    }
+
 
 }
