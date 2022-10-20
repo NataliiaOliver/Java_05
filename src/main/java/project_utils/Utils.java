@@ -389,5 +389,30 @@ public class Utils {
         return false;
     }
 
+    /**
+     * Methods for checking the oddness of numbers in an array (int, double):
+     */
+    public static boolean checkOddNumbers(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static boolean checkOddNumbers(double[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0.0) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 
 }
