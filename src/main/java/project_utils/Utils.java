@@ -52,6 +52,18 @@ public class Utils {
     }
 
     /**
+     * A generic method for creating an array with any data type and any length:
+     */
+    public static Object[] createArray(Object... v) {
+        Object[] array = new Object[v.length];
+        for (int i = 0; i < v.length; i++) {
+            array[i] = v[i];
+        }
+
+        return array;
+    }
+
+    /**
      * Method of creating an array of random positive numbers:
      */
     public static int[] arrayRandomPositiveNumbers(int length, int upper, int lower){
