@@ -1,5 +1,7 @@
 package project_utils;
 
+import java.util.Arrays;
+
 public class Utils {
 
     /**
@@ -114,6 +116,24 @@ public class Utils {
     }
 
     /**
+     * Method_3 of creating a two-dimensional array:
+     */
+    public static void random2DArray(int row, int column, int start, int end) {
+        int[][] randomArrays = new int[row][column];
+        int range = (end + 1 - start);
+
+        for (int i = 0; i <= row - 1; i++) {
+            for (int j = 0; j <= column - 1; j++) {
+
+                randomArrays[i][j] = (int) (Math.random() * range) + start;
+            }
+        }
+        for (int i = 0; i <= row - 1; i++) {
+            System.out.println(Arrays.toString(randomArrays[i]));
+        }
+    }
+
+    /**
      * Array printing methods (int, double, String, boolean):
      */
     public static void printArray(int[] array) {
@@ -164,6 +184,7 @@ public class Utils {
 
         return sumOfElements / array.length;
     }
+
 
     /**
      * Methods for calculating the minimum value of the elements of an array (int, double):
@@ -441,6 +462,40 @@ public class Utils {
 
         return count;
     }
+
+    /**
+     * Method of creating an array of even numbers from an array of integers:
+     */
+    public static int[] createArrayEvenIntegers(int[] array) {
+        int[] evenNumber = new int[countEvenNumbersInArray(array)];
+        int evenIndex = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                evenNumber[evenIndex] = array[i];
+                evenIndex++;
+            }
+        }
+
+        return evenNumber;
+    }
+
+    /**
+     * Method of creating an array of odd numbers from an array of integers:
+     */
+    public static int[] createArrayOddIntegers(int[] array) {
+        int[] oddNumber = new int[countOddNumbersInArray(array)];
+        int oddIndex = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                oddNumber[oddIndex] = array[i];
+                oddIndex++;
+            }
+        }
+
+        return oddNumber;
+    }
+
+
 
 
 }
