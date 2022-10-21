@@ -1,6 +1,6 @@
 public class OddEven {
 
-    public String OddEvenAlgorithm(long number) {
+    public String oddEvenAlgorithm(long number) {
         String even = "Even";
         String odd = "Odd";
         String undefined = "Undefined";

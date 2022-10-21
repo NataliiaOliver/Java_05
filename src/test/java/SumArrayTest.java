@@ -9,7 +9,7 @@ public class SumArrayTest {
         int[] array = {0, 1, 2, 3, 4, 5};
         int expectedResult = 15;
 
-        int actualResult = new SumArray().SumArrayAlgorithm(array);
+        int actualResult = new SumArray().sumArrayAlgorithm(array);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -20,7 +20,7 @@ public class SumArrayTest {
         int[] array = {-7, -3};
         int expectedResult = -10;
 
-        int actualResult = new SumArray().SumArrayAlgorithm(array);
+        int actualResult = new SumArray().sumArrayAlgorithm(array);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -31,7 +31,7 @@ public class SumArrayTest {
         int[] array = {Integer.MAX_VALUE + 1};
         int expectedResult = Integer.MIN_VALUE;
 
-        int actualResult = new SumArray().SumArrayAlgorithm(array);
+        int actualResult = new SumArray().sumArrayAlgorithm(array);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -42,7 +42,7 @@ public class SumArrayTest {
         int[] array = {Integer.MIN_VALUE - 1};
         int expectedResult = Integer.MAX_VALUE;
 
-        int actualResult = new SumArray().SumArrayAlgorithm(array);
+        int actualResult = new SumArray().sumArrayAlgorithm(array);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -53,7 +53,7 @@ public class SumArrayTest {
         int[] array = {};
         int expectedResult = 0;
 
-        int actualResult = new SumArray().SumArrayAlgorithm(array);
+        int actualResult = new SumArray().sumArrayAlgorithm(array);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -64,7 +64,7 @@ public class SumArrayTest {
         int[] array = {0};
         int expectedResult = 0;
 
-        int actualResult = new SumArray().SumArrayAlgorithm(array);
+        int actualResult = new SumArray().sumArrayAlgorithm(array);
 
         Assert.assertEquals(actualResult, expectedResult);
     }

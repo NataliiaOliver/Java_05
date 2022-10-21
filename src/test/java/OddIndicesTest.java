@@ -9,7 +9,7 @@ public class OddIndicesTest {
         int[] array = {-45, 590, 234, 985, 12, 68};
         int[] expectedResult = {590, 985, 68};
 
-        int[] actualResult = new OddIndices().OddIndicesAlgorithm(array);
+        int[] actualResult = new OddIndices().oddIndicesAlgorithm(array);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -20,7 +20,7 @@ public class OddIndicesTest {
         int[] array = {};
         int[] expectedResult = {};
 
-        int[] actualResult = new OddIndices().OddIndicesAlgorithm(array);
+        int[] actualResult = new OddIndices().oddIndicesAlgorithm(array);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -31,7 +31,7 @@ public class OddIndicesTest {
         int[] array = {0};
         int[] expectedResult = {};
 
-        int[] actualResult = new OddIndices().OddIndicesAlgorithm(array);
+        int[] actualResult = new OddIndices().oddIndicesAlgorithm(array);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
