@@ -38,16 +38,4 @@ public class BiggerValueTest {
 
         Assert.assertEquals(actualResult, expectedResult);
     }
-
-    @Test(priority = 4)
-    public void testGreaterThanIntegerMaxAndLessThanIntegerMin_Negative() {
-
-        int a = Integer.MAX_VALUE + 1;
-        int b = Integer.MIN_VALUE -1;
-        int expectedResult = Integer.MIN_VALUE -1;
-
-        int actualResult = new BiggerValue().biggerValueAlgorithm(a, b);
-
-        Assert.assertEquals(actualResult, expectedResult);
-    }
 }

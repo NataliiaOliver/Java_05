@@ -1,6 +1,6 @@
 public class PerformActionsWithM {
 
-    public String performActionsWithM(int m) {
+    public String performActionsWithMAlgorithm(int m) {
 
         String goodNumber = "Good Number";
         String badNumber = "Bad Number";

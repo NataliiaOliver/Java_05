@@ -9,7 +9,7 @@ public class PerformActionsWithMTest {
         int m = 63;
         String expectedResult = "Good Number";
 
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -20,7 +20,7 @@ public class PerformActionsWithMTest {
         int m = -63;
         String expectedResult = "Good Number";
 
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -31,7 +31,7 @@ public class PerformActionsWithMTest {
         int m = 9;
         String expectedResult = "Bad Number";
 
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -42,7 +42,7 @@ public class PerformActionsWithMTest {
         int m = -9;
         String expectedResult = "Bad Number";
 
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -53,7 +53,7 @@ public class PerformActionsWithMTest {
         int m = 11;
         String expectedResult = "Poor Number";
 
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -64,7 +64,7 @@ public class PerformActionsWithMTest {
         int m = -11;
         String expectedResult = "Poor Number";
 
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -75,7 +75,7 @@ public class PerformActionsWithMTest {
         int m = 32;
         String expectedResult = "-1";
 
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -86,7 +86,7 @@ public class PerformActionsWithMTest {
         int m = -32;
         String expectedResult = "-1";
 
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -97,29 +97,7 @@ public class PerformActionsWithMTest {
         int m = 0;
         String expectedResult = "Good Number";
 
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
-
-        Assert.assertEquals(actualResult, expectedResult);
-    }
-
-    @Test(priority = 10)
-    public void testPerformActionsWithM_MIsGreaterThanIntegerMax_HappyPath() {
-
-        int m = Integer.MAX_VALUE + 1; // Integer.MIN_VALUE
-        String expectedResult = "-1";
-
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
-
-        Assert.assertEquals(actualResult, expectedResult);
-    }
-
-    @Test(priority = 11)
-    public void testPerformActionsWithM_MIsLessThanIntegerMin_HappyPath() {
-
-        int m = Integer.MIN_VALUE - 1; // Integer.MAX_VALUE
-        String expectedResult = "-1";
-
-        String actualResult = new PerformActionsWithM().performActionsWithM(m);
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
         Assert.assertEquals(actualResult, expectedResult);
     }

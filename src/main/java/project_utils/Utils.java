@@ -297,6 +297,42 @@ public class Utils {
     }
 
     /**
+     * Methods to check whether the array is null (int, double, String):
+     */
+    public static boolean checkForNullArray(int[] array) {
+
+        if (array != null) {
+
+            return true;
+        } else {
+
+            return false;
+        }
+    }
+
+    public static boolean checkForNullArray(double[] array) {
+
+        if (array != null) {
+
+            return true;
+        } else {
+
+            return false;
+        }
+    }
+
+    public static boolean checkForNullArray(String[] array) {
+
+        if (array != null) {
+
+            return true;
+        } else {
+
+            return false;
+        }
+    }
+
+    /**
      * Methods for calculating the length of an array (int, double, boolean, String):
      */
     public static int lengthArray(int[] array) {

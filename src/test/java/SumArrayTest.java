@@ -26,28 +26,6 @@ public class SumArrayTest {
     }
 
     @Test(priority = 3)
-    public void testSumArrayOneIntegerMax_HappyPath() {
-
-        int[] array = {Integer.MAX_VALUE + 1};
-        int expectedResult = Integer.MIN_VALUE;
-
-        int actualResult = new SumArray().sumArrayAlgorithm(array);
-
-        Assert.assertEquals(actualResult, expectedResult);
-    }
-
-    @Test(priority = 4)
-    public void testSumArrayOneIntegerMin_HappyPath() {
-
-        int[] array = {Integer.MIN_VALUE - 1};
-        int expectedResult = Integer.MAX_VALUE;
-
-        int actualResult = new SumArray().sumArrayAlgorithm(array);
-
-        Assert.assertEquals(actualResult, expectedResult);
-    }
-
-    @Test(priority = 5)
     public void testIsEmptyArray_Negative() {
 
         int[] array = {};
@@ -58,10 +36,21 @@ public class SumArrayTest {
         Assert.assertEquals(actualResult, expectedResult);
     }
 
-    @Test(priority = 6)
+    @Test(priority = 4)
     public void testIsZeroNumber_Negative() {
 
         int[] array = {0};
+        int expectedResult = 0;
+
+        int actualResult = new SumArray().sumArrayAlgorithm(array);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test(priority = 5)
+    public void testIsNullArray_Negative() {
+
+        int[] array = null;
         int expectedResult = 0;
 
         int actualResult = new SumArray().sumArrayAlgorithm(array);
