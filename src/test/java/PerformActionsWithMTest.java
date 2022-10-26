@@ -92,10 +92,32 @@ public class PerformActionsWithMTest {
     }
 
     @Test(priority = 9)
+    public void testPerformActionsWithMIsMultipleElevenAndNine_HappyPath() {
+
+        int m = 99;
+        String expectedResult = "Bad Number";
+
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test(priority = 10)
+    public void testPerformActionsWithMIsMultipleSevenAndEleven_HappyPath() {
+
+        int m = 77;
+        String expectedResult = "Poor Number";
+
+        String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test(priority = 11)
     public void testPerformActionsWithM_MIsZero_HappyPath() {
 
         int m = 0;
-        String expectedResult = "Good Number";
+        String expectedResult = "Zero is always multiple of every number";
 
         String actualResult = new PerformActionsWithM().performActionsWithMAlgorithm(m);
 
