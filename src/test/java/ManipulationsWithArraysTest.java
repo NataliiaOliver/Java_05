@@ -166,4 +166,64 @@ public class ManipulationsWithArraysTest {
 
         Assert.assertEquals(actualResult, expectedResult);
     }
+
+    @Test(priority = 16)
+    public void testAreValuesGreaterThanNumber_HappyPath() {
+        int[] array = {3, 4, 5, 6, 7};
+        int number = 2;
+
+        boolean expectedResult = true;
+
+        boolean actualResult = new ManipulationsWithArrays().areValuesGreaterThanNumber(array, number);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test(priority = 17)
+    public void testAreValuesGreaterThanNumber_OneNumInArrayIsZero_HappyPath() {
+        int[] array = {0};
+        int number = 2;
+
+        boolean expectedResult = false;
+
+        boolean actualResult = new ManipulationsWithArrays().areValuesGreaterThanNumber(array, number);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test(priority = 18)
+    public void testAreValuesGreaterThanNumber_OneNumInArrayIsNegative_HappyPath() {
+        int[] array = {-3, 4, 5, 6, 7};
+        int number = 2;
+
+        boolean expectedResult = false;
+
+        boolean actualResult = new ManipulationsWithArrays().areValuesGreaterThanNumber(array, number);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test(priority = 19)
+    public void testAreValuesGreaterThanNumber_NullArray_Negative() {
+        int[] array = null;
+        int number = 2;
+
+        boolean expectedResult = false;
+
+        boolean actualResult = new ManipulationsWithArrays().areValuesGreaterThanNumber(array, number);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test(priority = 20)
+    public void testAreValuesGreaterThanNumber_ArrayIsEmpty_Negative() {
+        int[] array = {};
+        int number = 2;
+
+        boolean expectedResult = false;
+
+        boolean actualResult = new ManipulationsWithArrays().areValuesGreaterThanNumber(array, number);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
 }

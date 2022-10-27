@@ -72,4 +72,19 @@ public class ManipulationsWithArrays {
         return new String[]{};
     }
 
+    public boolean areValuesGreaterThanNumber(int[] array, int number) {
+        if (Utils.checkForNullArray(array) && Utils.checkForEmptyArray(array)) {
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] > number) {
+
+                    return true;
+                }
+
+                return false;
+            }
+        }
+
+        return false;
+    }
+
 }
