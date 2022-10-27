@@ -11,4 +11,14 @@ public class OddEvenValuesInArray {
 
         return 0;
     }
+
+    public int countOddValuesInArray(int[] array) {
+        if (Utils.checkForNullArray(array) && Utils.checkForEmptyArray(array)) {
+            int count = Utils.countOddNumbersInArray(array);
+
+            return count;
+        }
+
+        return 0;
+    }
 }

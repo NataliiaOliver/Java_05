@@ -32,4 +32,34 @@ public class OddEvenValuesInArrayTest {
 
         Assert.assertEquals(actualResult, expectedResult);
     }
+
+    @Test(priority = 4)
+    public void testCountOddValuesInArray_HappyPath() {
+        int[] array = {1, 2, 3, 4, 5};
+        int expectedResult = 3;
+
+        int actualResult = new OddEvenValuesInArray().countOddValuesInArray(array);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test(priority = 5)
+    public void testCountOddValuesInArray_ArrayIsEmpty_Negative() {
+        int[] array = {};
+        int expectedResult = 0;
+
+        int actualResult = new OddEvenValuesInArray().countOddValuesInArray(array);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test(priority = 6)
+    public void testCountOddValuesInArray_NullArray_Negative() {
+        int[] array = null;
+        int expectedResult = 0;
+
+        int actualResult = new OddEvenValuesInArray().countOddValuesInArray(array);
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
 }
