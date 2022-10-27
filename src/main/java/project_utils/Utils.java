@@ -237,6 +237,34 @@ public class Utils {
     }
 
     /**
+     * Methods for calculating the minimum value of the two elements:
+     */
+    public static int minValue(int num1, int num2) {
+        int min;
+        if (num1 <= num2) {
+            min = num1;
+        } else {
+            min = num2;
+        }
+
+        return min;
+    }
+
+    /**
+     * Methods for calculating the maximum value of the two elements:
+     */
+    public static int maxValue(int num1, int num2) {
+        int max;
+        if (num1 >= num2) {
+            max = num1;
+        } else {
+            max = num2;
+        }
+
+        return max;
+    }
+
+    /**
      * Method for calculating the minimum value, the maximum value and average of the elements of an array:
      */
     public static int[] minMaxAverageArray(int[] nameArray) {
